@@ -5,8 +5,8 @@ function App() {
   const value = true;
   return (
     <div className="App">
+      {value ? " bener" : "salah"}
       <HomePage />
-      {value ? "bener" : "salah"}
     </div>
   );
 }
