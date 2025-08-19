@@ -1,21 +1,10 @@
-function Article() {
-  const name = "Fedro";
-  const titles = ["tutorial reactjs", "tutorial NodeJS", "tutorial NextJS"];
-
-  // titles.map(item=>items)
+function Article(props) {
   return (
     <>
-      <div>{name}</div>
-      <div>
-        {titles.map((title) => {
-          return (
-            <>
-              <div>{title}</div>
-              <div>{title}</div>
-            </>
-          );
-        })}
-      </div>
+      <h3>{props.title}</h3>
+      <small>
+        Date : {props.date}, tags : {props.tags.join(",")}
+      </small>
     </>
   );
 }

@@ -1,10 +1,12 @@
 import "./App.css";
-import Article from "./components/Article";
+import HomePage from "./pages/Index";
 
 function App() {
+  const value = true;
   return (
     <div className="App">
-      <Article />
+      <HomePage />
+      {value ? "bener" : "salah"}
     </div>
   );
 }
