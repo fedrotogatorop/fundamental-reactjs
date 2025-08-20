@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { use, useEffect, useState } from "react";
 import Article from "../components/Article";
 import postsData from "../posts.json";
 import Search from "../components/Search";
@@ -14,11 +14,20 @@ function HomePage() {
     setPosts(filteredPosts);
     setTotalPosts(filteredPosts.length);
   };
+
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/posts")
       .then((response) => response.json())
       .then((json) => setExternalPosts(json));
   }, []);
+
+  useEffect(() => {
+    console.log("Ada post baru");
+  }, [posts]);
+
+  useEffect(() => {
+    console.log("render");
+  });
   return (
     <>
       <h1>Simple Blog</h1>
