@@ -2,16 +2,19 @@
   {
     "title": "Tutorial belajar reactjs lengkap",
     "tags": ["React", "Frontend"],
-    "date": "2024-01-01"
+    "date": "2024-01-01",
+    "isNew": true
   },
   {
     "title": "Tutorial belajar nodejs lengkap",
     "tags": ["NodeJS", "BackEND"],
-    "date": "2024-01-01"
+    "date": "2024-01-01",
+    "isNew": false
   },
   {
     "title": "Tutorial belajar fullstack lengkap",
     "tags": ["React&Node", "FullStack"],
-    "date": "2024-01-01"
+    "date": "2024-01-01",
+    "isNew": false
   }
 ]
