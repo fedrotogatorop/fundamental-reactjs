@@ -2,11 +2,11 @@ import "./App.css";
 import HomePage from "./pages/Index";
 
 function App() {
-  const value = true;
+  const name = "Fedro";
+
   return (
     <div className="App">
-      {value ? " bener" : "salah"}
-      <HomePage />
+      <HomePage name={name}/>
     </div>
   );
 }

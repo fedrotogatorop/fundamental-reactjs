@@ -1,8 +1,8 @@
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Article from "../components/Article";
 import postsData from "../posts.json";
 import Search from "../components/Search";
-function HomePage() {
+function HomePage({name}) {
   const [posts, setPosts] = useState(postsData);
   const [totalPosts, setTotalPosts] = useState(0);
   const [externalPosts, setExternalPosts] = useState([]);
@@ -35,7 +35,7 @@ function HomePage() {
       <Search onSearchChange={onSearchChange} totalPosts={totalPosts} />
       {posts.map((props, index) => (
         // <Article title={title} tags={tags} date={date} />
-        <Article {...props} key={index} /> //spread atribut
+        <Article {...props} key={index} name={name}/> //spread atribut
       ))}
       <hr />
       <h2>External Posts</h2>
